@@ -1,18 +1,32 @@
 package src.exercicios;
 
-public class ContaCorrente {
-    int numeroConta = 450326;
-    int numeroAgencia = 3995;
-    String nomeCliente = "Alvaro Batista";
-    String dataNascimento = "15/03/2000";
-    double saldoConta = 200;
+import java.time.LocalDate;
 
-    public void sacar(double valor) {
-        if (saldoConta < valor) {
-            System.out.println("Saldo insuficiente!");
-        } else {
-            this.saldoConta -= valor;
-            System.out.println(String.format("Você sacou %.2f, seu saldo é %.2f", valor, this.saldoConta));
-        }
+public class ContaCorrente {
+    int Conta;
+    int Agencia;
+    String nomeCliente;
+    LocalDate dataNascimento;
+    double saldo;
+    boolean ativo = true;
+
+    void consultarExtrato(LocalDate dataInicial, LocalDate dataFinal) {
+        // Sem Lógica
+    }
+
+    void sacar(double valorSolicitado) {
+        // Sem Lógica
+    }
+
+    void transferirValor(ContaCorrente conta, double valorSolicitado) {
+        // Sem Lógica
+    }
+
+    void cancelar(String justificativa) {
+        // Sem Lógica
+    }
+
+    void consultarSaldo() {
+        // Sem Lógica
     }
 }
